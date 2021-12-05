@@ -40,9 +40,9 @@
 }
 
 .title {
-  margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .title,
@@ -82,7 +82,11 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  min-width: 600px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover,
@@ -108,9 +112,55 @@
   margin-left: 0.5rem;
 }
 
+.deleteButton {
+  background-color: #eb4324;
+  border: 0;
+  padding: 10px 20px 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.uploadButton {
+  margin-left: 10px;
+  background-color: #10b510;
+  border: 0;
+  padding: 10px 20px 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.clipboard {
+  color: #10b510;
+  cursor: pointer;
+}
+
+.clipboardWrapper {
+  margin-left: 10px;
+  padding: 2px;
+  border: 1px solid #10b510;
+}
+
+.image {
+  max-width: 600px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.popover {
+  padding: 15px 10px 15px;
+  background-color: #10b510;
+  color: #fff;
 }
